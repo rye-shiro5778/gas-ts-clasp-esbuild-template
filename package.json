@@ -1,0 +1,28 @@
+{
+  "name": "gas-ts-clasp-esbuild-template",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "build": "node esbuild.js",
+    "push": "clasp push",
+    "open": "clasp open",
+    "deploy": "npm run build && npm run push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "20.10.0"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.82",
+    "clasp": "^1.0.0",
+    "esbuild": "^0.20.1",
+    "esbuild-gas-plugin": "^0.8.0",
+    "typescript": "^5.3.3"
+  }
+}
